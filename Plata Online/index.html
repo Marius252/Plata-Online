@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicație Bancară</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container" class="container">
+        <h2>Autentificare Bancară</h2>
+        <form id="login-form">
+            <label for="username">Utilizator:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Parolă:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Autentifică-te</button>
+        </form>
+    </div>
+
+    <div id="account-container" class="container" style="display: none;">
+        <h2>Contul Tău Bancar</h2>
+        <p>Sold curent: <span id="balance">0</span> RON</p>
+        <div>
+            <label for="deposit">Depunere:</label>
+            <input type="number" id="deposit" placeholder="Sumă depunere">
+            <button id="deposit-btn">Depune</button>
+        </div>
+        <div>
+            <label for="withdraw">Retragere:</label>
+            <input type="number" id="withdraw" placeholder="Sumă retragere">
+            <button id="withdraw-btn">Retrage</button>
+        </div>
+        <button id="logout-btn">Deconectează-te</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
